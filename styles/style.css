@@ -238,10 +238,57 @@ p {
         font-size: 1.2rem;
     }
 
-    /* .realisation img {
-        height: auto;
-    } */
 }
+
+/* Header Styling */
+.align-center {
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--secondary-color);
+    z-index: 999 ;    /*Pour que ça passe par dessus tout*/
+    padding-block: 10px;  /*10px au dessus et en dessous*/
+    box-shadow: 1px 1px 25px rgba(0,0,0,0.07);  /*7% d'opacité en noir pour cinder le menu avec le reste de la page */
+}
+
+.header-logo {
+    display: block;
+}
+
+.header-logo img {
+    width: 60px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 20px;
+    display: block;
+    box-sizing: border-box;
+    transition: .2s ease;
+}
+
+.header-menu li a:hover {
+    background-color: #f16529;
+}
+
+.header-menu li:last-child a {
+    background-color: #f16529;
+    color: #fff;
+
+}
+
 
 
 
