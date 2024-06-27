@@ -224,6 +224,10 @@ p {
     line-height: 2rem;
 }
 
+.header-menu-mobile {
+    display: none; /*Pour cacher la barre de menu quand on est en mode desktop*/
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .w40, .w60, .w25, .w32 {
@@ -244,8 +248,26 @@ p {
 /* Pour la partie responsive */
 @media(max-width:810px) {
     header {
-       /* display: none;   Pour effacer le menu */
+        height: 80px;
     }
+
+    .header-menu-mobile {
+        display: block; /*Pour afficher la barre de menu quand on est en mode mobile*/
+        border: 0px;
+        background-color: #fff;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+
+    .header-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    } 
 
     .header-menu {
         position: fixed;
@@ -253,10 +275,21 @@ p {
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: var(--secondary-color);
+        background-color: #fff;
         flex-direction: column;
         align-items: center;
+        justify-content: center; /* Pour le centrer en vertical */
+        gap: 30px; /*Comme ça quand on clique entre les espaces, on a rien */
+        display: none !important; /*None pour effacer le menu et !important pour assurer la prise en charge */
+
     }
+
+    .header-menu li:last-child a {
+        margin-top: 10px;
+    
+    }
+
+    
 
     .slider {
         height: 60vh;
