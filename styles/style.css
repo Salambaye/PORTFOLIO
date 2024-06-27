@@ -238,7 +238,81 @@ p {
         font-size: 1.2rem;
     }
 
+
 }
+
+/* Pour la partie responsive */
+@media(max-width:810px) {
+    header {
+       /* display: none;   Pour effacer le menu */
+    }
+
+    .header-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider {
+        height: 60vh;
+    }
+
+    .slider-content {
+        width: 90%;
+    }
+
+    .slider-content p {
+        margin-top: 10%;
+        font-size: 1.5rem;
+        text-wrap: balance; /*Pour bien organiser le texte */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 1rem;
+        text-wrap: balance;
+    }
+
+    .toColumn {
+        flex-direction: column;
+    }
+
+    .mCenter {  /*Pour centrer la partie "A propos " */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .wm100 {
+        width: 100%;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .boxed {
+        max-width: 90%;
+    }
+
+    .mgap20 {  /*Pour définir les espaces entre les lignes et entre les colonnes */
+        gap: 20px;
+    }
+}
+
 
 /* Header Styling */
 .align-center {
