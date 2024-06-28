@@ -31,3 +31,12 @@ Technologies Utilisées
     Ajustement de la taille et de la disposition des éléments pour différentes résolutions d'écran.
     Navigation mobile conviviale avec un menu déroulant adaptatif.
     Optimisation des images et du contenu pour des chargements rapides sur des connexions mobiles.
+
+## Auteure :
+
+    Salamata Nourou MBAYE : https://github.com/salambaye
+
+
+## Licence
+
+Ce projet est sous licence MIT.
