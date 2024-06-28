@@ -6,7 +6,7 @@ Technologies Utilisées
     CSS3
     JavaScript
 
-Installation
+##Installation
 
     Clonez le repository :
 
@@ -16,7 +16,7 @@ Installation
 
     Ouvrez le fichier index.html dans votre navigateur.
 
-Fonctionnalités
+##Fonctionnalités
 
     Accueil : Présentation
     À propos : Informations détaillées
