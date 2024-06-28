@@ -32,7 +32,7 @@ Technologies Utilisées
     Navigation mobile conviviale avec un menu déroulant adaptatif.
     Optimisation des images et du contenu pour des chargements rapides sur des connexions mobiles.
 
-## Auteure :
+## Autrice :
 
     Salamata Nourou MBAYE : https://github.com/salambaye
 
