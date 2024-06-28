@@ -253,27 +253,17 @@ p {
     }
 
     .header-menu-mobile {
-        display: block; /*Pour afficher la barre de menu quand on est en mode mobile*/
+        display: block; /*Pour afficher la barre de menu et le bouton de fermeture en mode mobile*/
         border: 0px;
         background-color: #fff;
         position: absolute;
+        top: 50%;
         left: 5%;
-        top: 50%;
         transform: translateY(-50%);
+        z-index: 991;
     }
 
-    .header-menu-mobile-exit {
-        display: block; /*Pour afficher la barre de menu quand on est en mode mobile*/
-        border: 0px;
-        background-color: #fff;
-        position: absolute;
-        right: 5%;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-
-    .header-logo {
+     .header-logo {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -302,7 +292,7 @@ p {
     }
 
     .active {
-        display: flex;
+        display: flex !important;
     }
 
     
