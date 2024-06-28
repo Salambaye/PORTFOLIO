@@ -6,7 +6,7 @@ Technologies Utilisées
     CSS3
     JavaScript
 
-##Installation
+## Installation
 
     Clonez le repository :
 
