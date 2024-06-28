@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth; /* Pour que le défilement soit fluide sur l'ensemble de la page*/
 }
 
 /* Body Styling */
@@ -260,6 +261,16 @@ p {
         top: 50%;
         transform: translateY(-50%);
     }
+
+    .header-menu-mobile-exit {
+        display: block; /*Pour afficher la barre de menu quand on est en mode mobile*/
+        border: 0px;
+        background-color: #fff;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     
 
     .header-logo {
@@ -267,6 +278,7 @@ p {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        z-index: 991;  /* Pour que le logo reste quand on clique sur le menu */
     } 
 
     .header-menu {

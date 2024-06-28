@@ -21,12 +21,16 @@
                     <img src="img/HTML5_logo.png">
                 </a>
                 <ul class="header-menu">
-                    <li><a href="http://">Accueil</a></li>
-                    <li><a href="http://">A propos</a></li>
-                    <li><a href="http://">Compétences</a></li>
-                    <li><a href="http://">Réalisations</a></li>
-                    <li><a href="http://">Contact</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">A propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#realisations">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+
+                <button onclick="closeMenu()" class="header-menu-mobile-exit">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
 
             </div>
         </div>
@@ -35,7 +39,7 @@
 <!-- Section Accueil -->
 
 
-    <div class="slider">
+    <div id="accueil" class="slider">
         <img src="img/slider.jpg" class="slider-background">
         <div class="slider-content">
             <h1>Salamata Nourou MBAYE</h1>
@@ -45,7 +49,7 @@
 
     <!-- Section A propos -->
 
-    <div class="section">
+    <div id="a-propos" class="section">
         <div class="boxed">
             <div class="flex toColumn mCenter">
                 <div class="w40 wm100">
@@ -62,7 +66,7 @@
     </div>
 
     <!-- Section compétences -->
-    <div class="section dark">
+    <div id="competences" class="section dark">
         <div class="boxed text-center">
             <h2>Découvrez mes compétences</h2>
             <div class="flex wrap gap20 toColumn ">
@@ -94,7 +98,7 @@
         </div>
     </div>
         <!-- Section réalisations -->
-    <div class="section">
+    <div id="realisations" class="section">
         <div class="boxed text-center">
             <h2> Mes réalisations </h2>
             <div class="flex wrap gap20 space-between">
@@ -134,7 +138,7 @@
     </div>
 
     <!-- Section contact -->
-    <div class="section dark">
+    <div id="contact" class="section dark">
         <div class="boxed text-center ">
             <h2>Contactez-moi </h2>
             <div class="flex toColumn w100 mgap20 space-between">
