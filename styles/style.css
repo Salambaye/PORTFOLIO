@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth; /* Pour que le défilement soit fluide sur l'ensemble de la page*/
 }
 
 /* Body Styling */
@@ -224,6 +225,10 @@ p {
     line-height: 2rem;
 }
 
+.header-menu-mobile {
+    display: none; /*Pour cacher la barre de menu quand on est en mode desktop*/
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .w40, .w60, .w25, .w32 {
@@ -238,10 +243,175 @@ p {
         font-size: 1.2rem;
     }
 
-    /* .realisation img {
-        height: auto;
-    } */
+
 }
+
+/* Pour la partie responsive */
+@media(max-width:810px) {
+    header {
+        height: 80px;
+    }
+
+    .header-menu-mobile {
+        display: block; /*Pour afficher la barre de menu quand on est en mode mobile*/
+        border: 0px;
+        background-color: #fff;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .header-menu-mobile-exit {
+        display: block; /*Pour afficher la barre de menu quand on est en mode mobile*/
+        border: 0px;
+        background-color: #fff;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+
+    .header-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 991;  /* Pour que le logo reste quand on clique sur le menu */
+    } 
+
+    .header-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Pour le centrer en vertical */
+        gap: 30px; /*Comme ça quand on clique entre les espaces, on a rien */
+        display: none !important; /*None pour effacer le menu et !important pour assurer la prise en charge */
+
+    }
+
+    .header-menu li:last-child a {
+        margin-top: 10px;
+    
+    }
+
+    .active {
+        display: flex;
+    }
+
+    
+
+    .slider {
+        height: 60vh;
+    }
+
+    .slider-content {
+        width: 90%;
+    }
+
+    .slider-content p {
+        margin-top: 10%;
+        font-size: 1.5rem;
+        text-wrap: balance; /*Pour bien organiser le texte */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 1rem;
+        text-wrap: balance;
+    }
+
+    .toColumn {
+        flex-direction: column;
+    }
+
+    .mCenter {  /*Pour centrer la partie "A propos " */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .wm100 {
+        width: 100%;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .boxed {
+        max-width: 90%;
+    }
+
+    .mgap20 {  /*Pour définir les espaces entre les lignes et entre les colonnes */
+        gap: 20px;
+    }
+}
+
+
+/* Header Styling */
+.align-center {
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--secondary-color);
+    z-index: 999 ;    /*Pour que ça passe par dessus tout*/
+    padding-block: 10px;  /*10px au dessus et en dessous*/
+    box-shadow: 1px 1px 25px rgba(0,0,0,0.07);  /*7% d'opacité en noir pour cinder le menu avec le reste de la page */
+}
+
+.header-logo {
+    display: block;
+}
+
+.header-logo img {
+    width: 60px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 20px;
+    display: block;
+    box-sizing: border-box;
+    transition: .2s ease;
+}
+
+.header-menu li a:hover {
+    background-color: #f16529;
+}
+
+.header-menu li:last-child a {
+    background-color: #f16529;
+    color: #fff;
+
+}
+
 
 
 

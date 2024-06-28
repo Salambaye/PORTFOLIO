@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Mon portfolio étudiant">
     <title>Mon Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -10,25 +10,36 @@
 </head>
 <body>
 
-    <header>
+<!-- Section header -->
+     <header>
         <div class="boxed">
-            <div class="flex">
+            <div class="flex align-center space-between">
+                <button onclick="openMenu()" class="header-menu-mobile">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
                 <a href="http://" class="header-logo">
                     <img src="img/HTML5_logo.png">
                 </a>
                 <ul class="header-menu">
-                    <li><a href="http://">Accueil</a></li>
-                    <li><a href="http://">A propos</a></li>
-                    <li><a href="http://">Compétences</a></li>
-                    <li><a href="http://">Réalisations</a></li>
-                    <li><a href="http://">Contact</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">A propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#realisations">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+
+                <button onclick="closeMenu()" class="header-menu-mobile-exit">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
 
             </div>
         </div>
     </header>
 
-    <div class="slider">
+<!-- Section Accueil -->
+
+
+    <div id="accueil" class="slider">
         <img src="img/slider.jpg" class="slider-background">
         <div class="slider-content">
             <h1>Salamata Nourou MBAYE</h1>
@@ -36,13 +47,15 @@
         </div>
     </div>
 
-    <div class="section">
+    <!-- Section A propos -->
+
+    <div id="a-propos" class="section">
         <div class="boxed">
-            <div class="flex">
-                <div class="w40">
+            <div class="flex toColumn mCenter">
+                <div class="w40 wm100">
                     <h2>A propos de moi</h2>
                 </div>
-                <div class="w60">
+                <div class="w60 wm100">
                     <p>Dans le cadre de mon master 2 en développement web et mobile à l’ESTIAM, je suis à la recherche
                         d’une alternance (contrat d’apprentissage) pour la rentrée prochaine avec un rythme de 4
                         jours en entreprise et 1 jour à l’école. Ambitieuse, rigoureuse et motivée, je suis prête à
@@ -53,31 +66,31 @@
     </div>
 
     <!-- Section compétences -->
-    <div class="section dark">
+    <div id="competences" class="section dark">
         <div class="boxed text-center">
             <h2>Découvrez mes compétences</h2>
-            <div class="flex wrap gap20">
-                <div class="w25 skill">
+            <div class="flex wrap gap20 toColumn ">
+                <div class="w25 wm100 skill">
                     <img src="img/HTML5_logo.png">
                     <h3> HTML </h3>
                 </div>
-                <div class="w25 skill">
+                <div class="w25 wm100 skill">
                     <img src="img/CSS3_logo.png">
                     <h3> CSS </h3>
                 </div>
-                <div class="w25 skill">
+                <div class="w25 wm100 skill">
                     <img src="img/JAVASCRIPT_logo.png">
                     <h3> JAVASCRIPT </h3>
                 </div>
-                <div class="w25 skill">
+                <div class="w25 wm100 skill">
                     <img src="img/PYTHON_logo.jpg">
                     <h3> PYTHON </h3>
                 </div>
-                <div class="w25 skill">
+                <div class="w25 wm100 skill">
                     <img src="img/JAVA_logo.png">
                     <h3> JAVA </h3>
                 </div>
-                <div class="w25 skill">
+                <div class="w25 wm100 skill">
                     <img src="img/PHP_logo.png">
                     <h3> PHP </h3>
                 </div>
@@ -85,7 +98,7 @@
         </div>
     </div>
         <!-- Section réalisations -->
-    <div class="section">
+    <div id="realisations" class="section">
         <div class="boxed text-center">
             <h2> Mes réalisations </h2>
             <div class="flex wrap gap20 space-between">
@@ -125,10 +138,10 @@
     </div>
 
     <!-- Section contact -->
-    <div class="section dark">
+    <div id="contact" class="section dark">
         <div class="boxed text-center ">
             <h2>Contactez-moi </h2>
-            <div class="flex space-between">
+            <div class="flex toColumn w100 mgap20 space-between">
                 <div class="w32 contact">
                     <span class="material-symbols-outlined icons"> mail</span>
                     <span class="label">E-mail</span>                    
